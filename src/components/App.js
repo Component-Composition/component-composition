@@ -10,7 +10,7 @@ export default function App() {
         <Characters />
       </Deck>
       <Deck>
-        <Gifs />
+        <Gifs count={2}/>
       </Deck>
     </>
   );
