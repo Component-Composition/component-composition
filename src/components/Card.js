@@ -1,15 +1,22 @@
 import React from 'react';
 import PropTypes from 'prop-types';
 
-const Card = ({ _id, name, image }) => {
-  return (
-    <div key={_id}>
-      <header><h3>{name}</h3></header>
+const Card = ({ characters }) => {
+
+  const cards = characters.map((character, i) => {
+    <div key={character._id || i}>
+      <header><h3>{character.name}</h3></header>
       <figure>
-        <img src={image} alt={name} />
+        <img src={character.image} alt={character.name} />
       </figure>
-      <p>{name} has {_id}</p>
+      <p>{character.name} has {character._id}</p>
     </div>
+  });
+
+  return (
+    <ul>
+      {cards}
+    </ul>
   );
 };
 
