@@ -1,8 +1,7 @@
 import React from 'react';
-import { gifs } from '../content.json';
 import Deck from '../components/Deck';
-import Cards from './DeckOfCards';
 import Characters from '../containers/Characters';
+import Gifs from '../containers/Gifs';
 
 export default function App() {
   return (
@@ -11,7 +10,7 @@ export default function App() {
         <Characters />
       </Deck>
       <Deck>
-        <Cards characters={gifs} />
+        <Gifs />
       </Deck>
     </>
   );
