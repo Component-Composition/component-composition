@@ -5,7 +5,7 @@ const Card = ({ _id, name, image }) => {
 
   return (
     <div key={_id}>
-      <header><h3>{name}</h3></header>
+      {name && <header><h3>{name}</h3></header>}
       <figure>
         <img src={image} alt={name} />
       </figure>
@@ -16,7 +16,7 @@ const Card = ({ _id, name, image }) => {
 
 Card.propTypes = {
   _id: PropTypes.string.isRequired,
-  name: PropTypes.string.isRequired,
+  name: PropTypes.string,
   image: PropTypes.string.isRequired
 };
 

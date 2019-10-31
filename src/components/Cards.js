@@ -23,7 +23,7 @@ const Cards = ({ characters }) => {
 Cards.propTypes = {
   characters: PropTypes.arrayOf(PropTypes.shape({
     _id: PropTypes.string.isRequired,
-    name: PropTypes.string.isRequired,
+    name: PropTypes.string,
     image: PropTypes.string.isRequired
   })).isRequired
 };

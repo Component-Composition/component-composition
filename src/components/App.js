@@ -9,16 +9,9 @@ export default function App() {
       <Deck>
         <Cards characters={characters} />
       </Deck>
-      <section>
-        {gifs.map(({ _id, image }) => (
-          <div key={_id}>
-            <header><h3>{_id}</h3></header>
-            <figure>
-              <img src={image} alt={_id} />
-            </figure>
-          </div>
-        ))}
-      </section>
+      <Deck>
+        <Cards characters={gifs} />
+      </Deck>
     </>
   );
 }
