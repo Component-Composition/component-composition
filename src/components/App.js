@@ -1,13 +1,14 @@
 import React from 'react';
-import { characters, gifs } from '../content.json';
+import { gifs } from '../content.json';
 import Deck from '../components/Deck';
 import Cards from './DeckOfCards';
+import Characters from '../containers/Characters';
 
 export default function App() {
   return (
     <>
       <Deck>
-        <Cards characters={characters} />
+        <Characters />
       </Deck>
       <Deck>
         <Cards characters={gifs} />
