@@ -24,7 +24,8 @@ Cards.propTypes = {
   characters: PropTypes.arrayOf(PropTypes.shape({
     _id: PropTypes.string.isRequired,
     name: PropTypes.string,
-    image: PropTypes.string.isRequired
+    image: PropTypes.string,
+    gifLink: PropTypes.string
   })).isRequired
 };
 
