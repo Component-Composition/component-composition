@@ -16,7 +16,7 @@ export default class Characters extends Component {
   }
 
   static defaultProps = {
-    count: 3
+    count: 10
   }
 
   componentDidMount() {
@@ -30,9 +30,7 @@ export default class Characters extends Component {
   render() {
     const { data } = this.state;
     return (
-      <Cards characters={data} />
+      <Cards items={data} />
     );
-
   }
-
 }

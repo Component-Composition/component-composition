@@ -1,5 +1,34 @@
 # Lab: Component Composition
-Authors: Jose, Antonella, and Abbey
+
+### Author: Abbey Masters, Jose Ojeda, Antonella Gutierrez
+
+### Links and Resources
+* [submission PR]()
+* [travis]()
+
+###  Components
+* `Characters.js`
+  * This component will render `Cards.js`
+* `Gifs.js`
+  * This component will render `Cards.js`
+* `Card.js`
+  * This component holds card layout
+* `DeckOfCards.js`
+  * This component uses `Card.js` to render cards
+* `Deck.js`
+  * This component contains cards
+* `App.js`
+  * This component renders all other components
+
+### Setup
+#### .env requirements
+* PORT - 7890
+#### Running the app
+* npm run build
+* npm run start
+#### Tests
+* Unit Tests: npm run test
+* Lint Tests: npm run lint
 
 ## Scripts
 "test": "jest --verbose",

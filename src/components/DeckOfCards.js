@@ -2,9 +2,9 @@ import React from 'react';
 import PropTypes from 'prop-types';
 import Card from './Card';
 
-const Cards = ({ characters }) => {
+const Cards = ({ items }) => {
 
-  const cards = characters.map((character, i) => {
+  const cards = items.map((character, i) => {
     return (
       <li key={character._id || i}>
         <Card {...character} />
@@ -21,7 +21,7 @@ const Cards = ({ characters }) => {
 };
 
 Cards.propTypes = {
-  characters: PropTypes.arrayOf(PropTypes.shape({
+  items: PropTypes.arrayOf(PropTypes.shape({
     _id: PropTypes.string.isRequired,
     name: PropTypes.string,
     image: PropTypes.string,

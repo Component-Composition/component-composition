@@ -9,7 +9,7 @@ const Card = ({ _id, name, image, gifLink }) => {
       <figure>
         <img src={image || gifLink} alt={name} />
       </figure>
-      <p>{name} has {_id}</p>
+      <p>{name} has following id: {_id}</p>
     </div>
   );
 };

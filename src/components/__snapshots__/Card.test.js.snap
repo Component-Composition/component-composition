@@ -17,7 +17,7 @@ exports[`Card Component renders Card 1`] = `
   </figure>
   <p>
     Arnold Shortman
-     has 
+     has following id: 
     5da237699734fdcb7bef8f51
   </p>
 </div>
