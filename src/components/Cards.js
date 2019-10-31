@@ -5,9 +5,11 @@ import Card from './Card';
 const Cards = ({ characters }) => {
 
   const cards = characters.map((character, i) => {
-    <li key={character._id || i}>
-      <Card {...character} />
-    </li>;
+    return (
+      <li key={character._id || i}>
+        <Card {...character} />
+      </li>
+    );
   });
 
   return (

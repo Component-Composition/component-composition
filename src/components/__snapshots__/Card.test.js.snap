@@ -1,0 +1,24 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Card Component renders Card 1`] = `
+<div
+  key="5da237699734fdcb7bef8f51"
+>
+  <header>
+    <h3>
+      Arnold Shortman
+    </h3>
+  </header>
+  <figure>
+    <img
+      alt="Arnold Shortman"
+      src="https://vignette.wikia.nocookie.net/heyarnold/images/f/f5/Arnold.png/revision/latest?cb=20181027162333"
+    />
+  </figure>
+  <p>
+    Arnold Shortman
+     has 
+    5da237699734fdcb7bef8f51
+  </p>
+</div>
+`;

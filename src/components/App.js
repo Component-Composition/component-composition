@@ -1,5 +1,5 @@
 import React from 'react';
-import { gifs } from '../content.json';
+import { characters, gifs } from '../content.json';
 import Deck from '../components/Deck';
 import Cards from '../components/Cards';
 
@@ -7,7 +7,7 @@ export default function App() {
   return (
     <>
       <Deck>
-        {Cards}
+        <Cards characters={characters} />
       </Deck>
       <section>
         {gifs.map(({ _id, image }) => (
