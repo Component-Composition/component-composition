@@ -1,7 +1,7 @@
 import React from 'react';
 import { characters, gifs } from '../content.json';
 import Deck from '../components/Deck';
-import Cards from '../components/Cards';
+import Cards from './DeckOfCards';
 
 export default function App() {
   return (

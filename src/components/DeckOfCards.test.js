@@ -1,6 +1,6 @@
 import React from 'react';
 import { shallow } from 'enzyme';
-import Cards from './Cards';
+import Cards from './DeckOfCards';
 
 describe('Card Component', () => {
   const charArr = [{
