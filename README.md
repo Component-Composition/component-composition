@@ -3,7 +3,7 @@
 ### Author: Abbey Masters, Jose Ojeda, Antonella Gutierrez
 
 ### Links and Resources
-* [submission PR]()
+* [submission PR](https://github.com/Component-Composition/component-composition/pull/1)
 * [travis]()
 
 ###  Components
