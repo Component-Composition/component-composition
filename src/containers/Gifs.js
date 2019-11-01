@@ -1,6 +1,7 @@
 import React, { Component } from 'react';
 import PropTypes from 'prop-types';
 import Cards from '../components/DeckOfCards';
+import { getItems } from '../services/hey-arnold-api';
 
 export default class Gifs extends Component {
   constructor(props) {
@@ -22,8 +23,7 @@ export default class Gifs extends Component {
   componentDidMount() {
     const URL = `https://hey-arnold-api.herokuapp.com/api/v1/gifs/random?count=${this.props.count}`;
 
-    fetch(URL)
-      .then(response => response.json())
+    getItems(URL)
       .then(data => this.setState({ data }));
   }
 
