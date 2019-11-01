@@ -1,6 +1,7 @@
 import React from 'react';
 import { shallow } from 'enzyme';
-import Characters from './Characters';
+import Deck from './Deck';
+import Characters from '../containers/Characters';
 import { getItems } from '../services/hey-arnold-api';
 
 jest.mock('../services/hey-arnold-api.js', () => {
@@ -15,10 +16,10 @@ jest.mock('../services/hey-arnold-api.js', () => {
   };
 });
 
-describe('Characters Component', () => {
-  it('renders Characters', () => {
+describe('Deck Component', () => {
+  it('renders a deck', () => {
     return getItems().then(item => {
-      const wrapper = shallow(<Characters items={item} />);
+      const wrapper = shallow(<Deck><Characters items={item}  /></Deck>);
       expect(wrapper).toMatchSnapshot();
     });
   });

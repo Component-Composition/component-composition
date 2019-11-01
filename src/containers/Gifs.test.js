@@ -1,6 +1,6 @@
 import React from 'react';
 import { shallow } from 'enzyme';
-import Characters from './Characters';
+import Gifs from './Gifs';
 import { getItems } from '../services/hey-arnold-api';
 
 jest.mock('../services/hey-arnold-api.js', () => {
@@ -8,17 +8,16 @@ jest.mock('../services/hey-arnold-api.js', () => {
     getItems() {
       return Promise.resolve([{
         '_id': '5da237699734fdcb7bef8f51',
-        'name': 'Arnold Shortman',
-        'image': 'https://vignette.wikia.nocookie.net/heyarnold/images/f/f5/Arnold.png/revision/latest?cb=20181027162333'
+        'gifLink': '"https://media.tenor.com/images/e7623921965651fa6fba7e0c37892044/tenor.gif"'
       }]);
     }
   };
 });
 
-describe('Characters Component', () => {
+describe('Gifs Component', () => {
   it('renders Characters', () => {
     return getItems().then(item => {
-      const wrapper = shallow(<Characters items={item} />);
+      const wrapper = shallow(<Gifs items={item} />);
       expect(wrapper).toMatchSnapshot();
     });
   });
