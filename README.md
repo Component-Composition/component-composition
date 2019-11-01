@@ -4,7 +4,7 @@
 
 ### Links and Resources
 * [submission PR](https://github.com/Component-Composition/component-composition/pull/1)
-* [travis]()
+* [travis]('test)
 
 ###  Components
 * `Characters.js`
